@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ONLINESHOOPINGAPP"
+        tools:targetApi="31">
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.ONLINESHOOPINGAPP.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".DBHelper"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DBHelper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Loginpage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.Loginpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+        android:name=".InputValidation"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.InputValidation" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+    </activity>
+        <activity
+            android:name=".User"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.User" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+    </application>
+
+</manifest>

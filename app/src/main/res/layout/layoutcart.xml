@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+    android:id="@+id/tshirt"
+    android:layout_width="447dp"
+    android:layout_height="154dp"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/shirt" />
+
+<TextView
+    android:id="@+id/about"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tshirt"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:text="Levis t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Rs.1050\nMen t-shirt"
+    android:textAllCaps="false"
+    android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Placeorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="#F32424"
+        android:text="PLACE ORDER"
+        app:cornerRadius="20dp"
+        android:textAllCaps="true"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
